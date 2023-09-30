@@ -10,8 +10,7 @@ Feature: Crear perfil de turista
     When intento crear mi perfil sin proporcionar datos relevantes
     Then la plataforma muestra un mensaje de error indicando que se requieren datos válidos
 
-Examples:
-    | Destino       | Fecha       | Itinerario Esperado                                  |
-    | Paris         | 2023-10-15  | Visita a la Torre Eiffel y Museo del Louvre          |
-    | New York      | 2023-11-05  | Paseo por Times Square y Estatua de la Libertad      |
-    | Tokyo         | 2023-12-20  | Recorrido por el Palacio Imperial y Shibuya Crossing |
+  Examples:
+    | Nombre   | Edad | Intereses               | Preferencias                | Resultado Esperado                       |
+    | Juan     | 28   | Aventura, Cultura       | Destinos exóticos, Playas   | Creación de Perfil Exitosa               |
+    | Maria    | 22   | Naturaleza, Gastronomía | Ciudades históricas         | Mensaje de Error: Datos incompletos      |

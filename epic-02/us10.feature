@@ -10,3 +10,7 @@ Feature: Explorar paquetes de viaje
     When elijo un paquete de viaje de la lista
     Then la plataforma muestra detalles y opciones para ese paquete
 
+  Examples:
+    | Destino        | Fecha de Salida | Duración | Precio  | Resultado Esperado                       |
+    | Paris, Francia | 2023-10-15      | 7 días   | $1500   | Visualización Exitosa de Paquetes        |
+    | New York, USA  | 2023-11-05      | 5 días   | $1200   | Elección Exitosa de Paquete              |

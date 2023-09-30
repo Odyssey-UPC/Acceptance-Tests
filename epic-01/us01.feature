@@ -1,19 +1,14 @@
 Feature: Crear perfil de turista
 
-  Scenario: Creación de perfil de turista exitosa
-    Given que el cliente quiere crear un perfil como turista en la plataforma
-    When el cliente se registra como turista con sus datos
-    Then el sistema crea automáticamente el perfil del cliente como turista
+  Scenario: Creación de perfil exitosa
+    Given que soy un turista
+    When ingreso mis datos relevantes, intereses y preferencias de viaje
+    Then la plataforma crea mi perfil de turista correctamente
 
-  Scenario: Explorar paquetes de viaje
-    Given que el turista ha iniciado sesión en su perfil
-    When selecciona la opción de explorar paquetes de viaje
-    Then la plataforma muestra una lista de paquetes de viaje
-
-  Scenario: Reservar actividades y experiencias
-    Given que el turista ha encontrado una actividad o experiencia
-    When selecciona la opción de reservar
-    Then la plataforma reserva la actividad o experiencia para el turista
+  Scenario: Creación de perfil fallida
+    Given que soy un turista
+    When intento crear mi perfil sin proporcionar datos relevantes
+    Then la plataforma muestra un mensaje de error indicando que se requieren datos válidos
 
 Examples:
     | Destino       | Fecha       | Itinerario Esperado                                  |

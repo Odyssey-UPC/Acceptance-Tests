@@ -16,7 +16,7 @@ Feature: Crear perfil de turista
     Then la plataforma reserva la actividad o experiencia para el turista
 
 Examples:
-    | Destino       | Fecha       | Itinerario Esperado                              |
-    | Paris         | 2023-10-15  | Visita a la Torre Eiffel y Museo del Louvre     |
-    | New York       | 2023-11-05  | Paseo por Times Square y Estatua de la Libertad |
+    | Destino       | Fecha       | Itinerario Esperado                                  |
+    | Paris         | 2023-10-15  | Visita a la Torre Eiffel y Museo del Louvre          |
+    | New York      | 2023-11-05  | Paseo por Times Square y Estatua de la Libertad      |
     | Tokyo         | 2023-12-20  | Recorrido por el Palacio Imperial y Shibuya Crossing |
